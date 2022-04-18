@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "launch.png",
+      "filename" : "Sochi.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "launch@2x.png",
+      "filename" : "Sochi@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "launch@3x.png",
+      "filename" : "Sochi@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
