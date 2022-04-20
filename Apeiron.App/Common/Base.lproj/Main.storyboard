@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBu-Al-gya">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBu-Al-gya">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Пушкин в Москве-->
+        <!--Адлер Сочи-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MoscowViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MoscowViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-H5-W9E">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -29,31 +30,82 @@
                             <constraint firstItem="eLe-H5-W9E" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="eCM-sw-TQ2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Пушкин в Москве" largeTitleDisplayMode="always" id="yWg-rh-y5W">
+                    <navigationItem key="navigationItem" title="Адлер Сочи" largeTitleDisplayMode="always" id="yWg-rh-y5W">
                         <barButtonItem key="backBarButtonItem" title="Москва" id="QVw-tc-inp"/>
                     </navigationItem>
                     <connections>
                         <outlet property="moscowMapView" destination="eLe-H5-W9E" id="CCi-rE-Lcc"/>
                         <segue destination="Omf-fm-tMj" kind="show" identifier="ARSegue" id="znA-ou-tN1"/>
+                        <segue destination="DXs-i6-99y" kind="show" identifier="ImageSegue" id="xLF-Ew-4jc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="12"/>
+            <point key="canvasLocation" x="1694" y="11"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="dvV-7v-RE0">
+            <objects>
+                <viewController id="DXs-i6-99y" customClass="ImageViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BpW-Jm-WFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4UM-1n-Iee">
+                                <rect key="frame" x="0.0" y="121.66666666666669" width="375" height="656.33333333333326"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F5f-uB-cYM" appends="YES" id="8al-kD-lo5"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxy-la-n9Q">
+                                <rect key="frame" x="0.0" y="88" width="375" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wRa-AJ-n4X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mxy-la-n9Q" firstAttribute="top" secondItem="wRa-AJ-n4X" secondAttribute="top" id="7GD-f2-yTc"/>
+                            <constraint firstItem="wRa-AJ-n4X" firstAttribute="bottom" secondItem="4UM-1n-Iee" secondAttribute="bottom" id="JEf-JW-Dln"/>
+                            <constraint firstItem="mxy-la-n9Q" firstAttribute="leading" secondItem="wRa-AJ-n4X" secondAttribute="leading" id="Og3-v7-LWh"/>
+                            <constraint firstItem="wRa-AJ-n4X" firstAttribute="trailing" secondItem="4UM-1n-Iee" secondAttribute="trailing" id="fjV-bX-pOd"/>
+                            <constraint firstItem="4UM-1n-Iee" firstAttribute="leading" secondItem="wRa-AJ-n4X" secondAttribute="leading" id="j7Z-sC-KGv"/>
+                            <constraint firstItem="4UM-1n-Iee" firstAttribute="top" secondItem="mxy-la-n9Q" secondAttribute="bottom" id="n1M-lH-v3g"/>
+                            <constraint firstItem="wRa-AJ-n4X" firstAttribute="trailing" secondItem="mxy-la-n9Q" secondAttribute="trailing" id="voX-UW-gZp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Her-lJ-RIp"/>
+                    <connections>
+                        <outlet property="Label" destination="mxy-la-n9Q" id="7a2-Ea-xlj"/>
+                        <outlet property="imageView" destination="4UM-1n-Iee" id="RIm-aZ-5xi"/>
+                        <outlet property="label" destination="mxy-la-n9Q" id="9cb-Vf-6OI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4y-Rf-aBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="F5f-uB-cYM">
+                    <connections>
+                        <action selector="userTapped:" destination="DXs-i6-99y" id="O8f-2k-a93"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2505" y="364"/>
         </scene>
         <!--Найдите книгу-->
         <scene sceneID="1lv-aO-Y7s">
             <objects>
                 <viewController storyboardIdentifier="ARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omf-fm-tMj" customClass="ARViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6m4-L7-R6h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSJ-gI-b6T">
-                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="703"/>
                             </arscnView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-Ei-TF8">
-                                <rect key="frame" x="0.0" y="44" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="21"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Однажды в студёную зимнюю пору...
 </string>
@@ -62,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLy-eJ-GPR">
-                                <rect key="frame" x="138" y="318" width="99" height="96.5"/>
+                                <rect key="frame" x="138" y="412.33333333333331" width="99" height="96.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -93,18 +145,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYV-va-5sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="11"/>
+            <point key="canvasLocation" x="2506" y="-448"/>
         </scene>
-        <!--Пушкин в России-->
+        <!--Сочи-->
         <scene sceneID="axE-z0-xbC">
             <objects>
                 <viewController storyboardIdentifier="RussiaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G9b-mT-vZM" customClass="CountryViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tu0-Xb-hqc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2DN-MV-a4q">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fSc-bc-KWh"/>
@@ -116,7 +168,7 @@
                             <constraint firstItem="2DN-MV-a4q" firstAttribute="leading" secondItem="Tu0-Xb-hqc" secondAttribute="leading" id="phs-hq-boa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Пушкин в России" id="5f7-e7-16d">
+                    <navigationItem key="navigationItem" title="Сочи" id="5f7-e7-16d">
                         <barButtonItem key="backBarButtonItem" title="Россия" id="znE-PX-ZGd"/>
                     </navigationItem>
                     <connections>
@@ -134,7 +186,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oBu-Al-gya" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zeH-I3-auT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -147,4 +199,9 @@
             <point key="canvasLocation" x="-38" y="13"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

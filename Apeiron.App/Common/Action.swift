@@ -10,10 +10,12 @@ import UIKit
 
 /// Action to perform when annotation pin is tapped on the map view
 ///
+/// - image: open a page with an image with given name
 /// — none: no action
 /// - openURL: open an URL with open(_:options:completionHandler:)
 /// - performSegue: perform a segue with performSegue(withIdentifier:sender:)
 enum Action {
+    case image(String, String)
     case none
     case openURL(String)
     case performSegue(String)
@@ -22,6 +24,18 @@ enum Action {
     func perform(sender: UIViewController) {
         // check which action to perform
         switch self {
+        case .image(let name, let text):
+            guard let moscowViewController = sender as? MoscowViewController else {
+                print(#line, #function, "Can't cast sender to MoscowViewController")
+                return
+            }
+            
+            moscowViewController.imageName = name
+            moscowViewController.imageText = text
+            
+            // perform a segue to image page
+            moscowViewController.performSegue(withIdentifier: "ImageSegue", sender: sender)
+            
         case .none:
             // no action to perform
             break
