@@ -8,7 +8,7 @@ Choice of places for guests of Sochi
 
 ![Screen Adler on the map](https://github.com/KirProto/Sochi.App/blob/master/Apeiron.App/Common/Assets.xcassets/Screnshots/Screenshot02.imageset/Screenshot02.png?raw=true)
 
-![Adler go to site Wiki](https://github.com/KirProto/Sochi.App/blob/master/Apeiron.App/Common/Assets.xcassets/Screnshots/Screenshot03.imageset/Screenshot02.png?raw=true)
+![Adler go to site Wiki](https://github.com/KirProto/Sochi.App/blob/master/Apeiron.App/Common/Assets.xcassets/Screnshots/Screenshot03.imageset/Screenshot03.png?raw=true)
 
 ![Sochi Central on the map](https://github.com/KirProto/Sochi.App/blob/master/Apeiron.App/Common/Assets.xcassets/Screnshots/Screenshot04.imageset/Screenshot04.png?raw=true)
 
