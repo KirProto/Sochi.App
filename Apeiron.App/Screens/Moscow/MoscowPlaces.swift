@@ -12,13 +12,12 @@ import CoreLocation
 let moscowPlaces: [Place] = [
     Place(
         action: .image("IMG_0834", "МорПорт Сочи"),
-        //        .openURL("https://yandex.ru/maps/-/CCUFULDjXC"),
         address: "ул. Войкова, 1, Сочи, Краснодарский край, 354000",
         coordinate: CLLocationCoordinate2D(latitude: 43.580764, longitude: 39.718618),
         title: "МорПорт Сочи"
     ),
     Place(
-        action: .openURL("https://yandex.ru/maps/-/CCUFUPuoxA"),
+        action: .openURL("https://goo.gl/maps/9FbS1uSPY8eSemEt7"),
         address: "ул. Новая Заря, 7, Сочи, Краснодарский край, 354000",
         coordinate: CLLocationCoordinate2D(latitude: 43.605961, longitude: 39.732181),
         title: "МореМолл"

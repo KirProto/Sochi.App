@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Адлер Сочи" largeTitleDisplayMode="always" id="yWg-rh-y5W">
-                        <barButtonItem key="backBarButtonItem" title="Москва" id="QVw-tc-inp"/>
+                        <barButtonItem key="backBarButtonItem" title="Адлер Сочи" id="QVw-tc-inp"/>
                     </navigationItem>
                     <connections>
                         <outlet property="moscowMapView" destination="eLe-H5-W9E" id="CCi-rE-Lcc"/>
@@ -77,7 +77,9 @@
                             <constraint firstItem="wRa-AJ-n4X" firstAttribute="trailing" secondItem="mxy-la-n9Q" secondAttribute="trailing" id="voX-UW-gZp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Her-lJ-RIp"/>
+                    <navigationItem key="navigationItem" id="Her-lJ-RIp">
+                        <barButtonItem key="backBarButtonItem" title="Сочи Центральный" id="kcs-83-t5o"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Label" destination="mxy-la-n9Q" id="7a2-Ea-xlj"/>
                         <outlet property="imageView" destination="4UM-1n-Iee" id="RIm-aZ-5xi"/>
@@ -147,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="2506" y="-448"/>
         </scene>
-        <!--Сочи-->
+        <!--Сочи Большой-->
         <scene sceneID="axE-z0-xbC">
             <objects>
                 <viewController storyboardIdentifier="RussiaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G9b-mT-vZM" customClass="CountryViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,8 +170,8 @@
                             <constraint firstItem="2DN-MV-a4q" firstAttribute="leading" secondItem="Tu0-Xb-hqc" secondAttribute="leading" id="phs-hq-boa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Сочи" id="5f7-e7-16d">
-                        <barButtonItem key="backBarButtonItem" title="Россия" id="znE-PX-ZGd"/>
+                    <navigationItem key="navigationItem" title="Сочи Большой" id="5f7-e7-16d">
+                        <barButtonItem key="backBarButtonItem" title="Сочи Большой" id="znE-PX-ZGd"/>
                     </navigationItem>
                     <connections>
                         <outlet property="countryMapView" destination="2DN-MV-a4q" id="84c-s5-ctS"/>

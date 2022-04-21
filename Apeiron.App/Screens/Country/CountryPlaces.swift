@@ -15,7 +15,7 @@ let countryPlaces: [Place] = [
           coordinate: CLLocationCoordinate2D(latitude: 43.585472, longitude: 39.723098),
           title: "Сочи Центральный"
          ),
-    Place(action: .openURL("https://ilibrary.ru/text/483/index.html"),
+    Place(action: .openURL("https://ru.wikipedia.org/wiki/Адлер"),
           address: "Адлер Сочи, Россия",
           coordinate: CLLocationCoordinate2D(latitude: 43.438172, longitude: 39.911178),
           title: "Адлер Сочи"
